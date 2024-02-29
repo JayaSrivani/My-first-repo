@@ -1,0 +1,67 @@
+<!DOCTYYPE.HTML>
+<html>
+<head>
+<style>
+h1{
+ font-size:25px;
+ color:black;
+ text-align: center;
+ margin-top:50px;
+}
+.button {
+  border:12px solid pink;
+  background-color: white;
+  color: black;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 16px;  
+  transition: 0.8s;
+  position: relative;
+}
+.button:hover{
+	background-color: #ff0066;
+	color:#ffffff;
+}
+
+.button.large {
+        font-size: 50px;
+        padding: 15px 25px;
+}
+.img{
+   margin-top:60px;
+}
+</style>
+</head>
+
+<body style="background-color:pink;">
+<center>
+<h1>Will You Be My Comrade????</h1>
+<img class="img" id="image" src="erm-fingers.gif" width="300" height="300">
+<br>
+
+
+
+<button class="button" id="button1" onclick="changeImage()">Yes!I Love You😘</button>
+<button class="button" id="button2" onclick="increaseSizeAndChangeText()">Sorry! No😢</button>
+
+<script>
+    function increaseSizeAndChangeText(){
+        var button1 = document.getElementById('button1');
+        var button2 = document.getElementById('button2');
+
+        // Increase size of button 2
+        button1.classList.add('large');
+
+        // Change text of button 1
+        button2.textContent = 'Say yes Na!!🥲';
+        }
+    function changeImage(){
+	var image = document.getElementById('image');
+
+	image.src = 'tkthao219-bubududu.gif';
+    }
+</script>
+</body>
+</html>
+
